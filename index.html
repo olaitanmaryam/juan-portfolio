@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maryam Olaitan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/1.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>   
+        <img src="images/1.png" alt="logo" aria-label="logo"> 
+       <div class="menuIcon">  
+        <img src="images/Menu.png" alt="menu" class="menu" aria-label="menu"  onclick="toggleMenu()">  
+            <nav>   
+                <ul id="menuList">
+                    <li><a href="#" target="_self">Home</a></li>
+                    <li><a href="/portfolio/portfolio.html" target="_self">Portfolio</a></li>
+                    <li><a href="/contact/contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </nav>
+       </div>
+    </header>
+    <main>  
+        <div class="left">   
+            <h1>DESIGNING <span class="plus">&plus;</span> BUILDING<br>HIGH-PERFORMING<br> WEBSITES</h1>
+
+            <p class="italic">Hi, I'm <span class="name">Juan</span>. <br>I design stunning digital experiences that drive conversions, build brand recognition, and establish an online presence that resonates with your target audience.</p>
+            <p class="bold">Elevate your brand's identity with:
+            </p>
+            <ul>
+                <li>Website Design that Converts</li>
+                <li>Graphic Design that Inspires</li>
+                <li>Branding that Elevates</li>
+                <li>User Experience that Delights</li>
+            </ul>
+        </div>
+        <div class="right">   
+           <div class="top">
+                <div class="i">   
+                    <img src="images/Screen-002.PNG" alt="">
+                </div>    
+                <div class="ii">   
+                    <img src="images/matsuya-demo-squarespace-com--1689x1080.jpg" alt="" class="a">
+
+                   
+                    <img src="images/talva-demo-squarespace-com--1689x1080 (1).jpg" alt="" class="b">
+
+                    <a href="#"><button>Explore My Work</button></a>
+                
+                </div>
+            </div>    
+    </main>
+    <script>
+        let menuList = document.getElementById('menuList')
+        menuList.style.maxHeight = '0px';
+        function toggleMenu() { 
+            if(menuList.style.maxHeight == '0px'){menuList.style.maxHeight = '300px';}
+            else{menuList.style.maxHeight = '0px';}
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="images/1.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>   
+        <img src="images/1.png" alt="logo" class="logo" aria-label="logo"> 
+       <div class="menuIcon">  
+        <img src="images/Menu.png" alt="menu" class="menu" aria-label="menu"  onclick="toggleMenu()">  
+            <nav>   
+                <ul id="menuList">
+                  <!--   <img src="images/Close.png" alt="close" class="close" aria-label="close"  onclick="toggleMenu()">  -->
+                    <li><a href="/home/index.html" target="_self">Home</a></li>
+                    <li><a href="/portfolio/portfolio.html" target="_self">Portfolio</a></li>
+                    <li><a href="#" target="_self">Contact</a></li>
+                </ul>
+            </nav>
+       </div>
+    </header>
+    <main>  
+        <div class="left">
+            <div class="paragraph">
+                <h1>Let Us Create Something Amazing Together</h1>
+                <p>Book a Project <b>or</b> Make Inquiries</p>
+            </div>
+            <form action="https://wa.me/+2348144105468?text=messsage" class="booking" role="noopener noreferrer">
+                <div class="group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="group">
+                    <label for="project_type">Project Type:</label>
+                    <select name="project_type" id="project_type" required>
+                        <option value="">Select</option>
+                        <option value="web_development">Web Development</option>
+                        <option value="graphic_design">Graphic Design</option>
+                        <option value="wordpress">WordPress</option>
+                    </select>
+                </div>
+                <div class="group">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" required></textarea>
+                </div>
+                <div class="radioGroup">
+                    <p>How did you hear about us?</p>
+                    <div class="radioOption">
+                        <input type="radio" id="option1" name="options" value="option1">
+                    <label for="option1">Referral</label>
+                    </div>
+                    <div class="radioOption">
+                        <input type="radio" id="option1" name="options" value="option1">
+                    <label for="option1">Ads</label>
+                    </div>
+                </div>
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+        <div class="right">
+            <div class="social">
+                <a href="tel:+2348144105468"><img src="images/Call.png" alt=""></a>
+               <a href="mailto:olaitanmaryamm@gmail.com"> <img src="images/Mail.png" alt=""></a>
+            </div>
+            <img src="images/1111.png" alt="" class="mock">
+        </div>
+    </main>
+    <script>
+        let menuList = document.getElementById('menuList')
+        menuList.style.maxHeight = '0px';
+        function toggleMenu() { 
+            if(menuList.style.maxHeight == '0px'){menuList.style.maxHeight = '300px';}
+            else{menuList.style.maxHeight = '0px';}
+        }
+    </script>
+</body>
+</html>
